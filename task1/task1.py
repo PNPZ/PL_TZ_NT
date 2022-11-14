@@ -2,18 +2,18 @@
 n = int(input())
 m = int(input())
 
-array_1 = m * [int(a) for a in range(1, n + 1) ]
-array_2 = ['']
+array_one = m * [int(a) for a in range(1, n + 1) ]
+array_two = ['']
 array_3 = []
 cnt = 0 
 
-while array_2[-1] != 1:
-    array_2.clear()
+while array_two[-1] != 1:
+    array_two.clear()
     for a in range(cnt, m + cnt):
-        array_2.append(array_1[a])
+        array_two.append(array_one[a])
         cnt += 1
-    array_2_copy = array_2.copy()
-    array_3.append(array_2_copy)
+    array_two_copy = array_two.copy()
+    array_3.append(array_two_copy)
     cnt -= 1
-for k in range(len(array_3)):
-    print(array_3[k][0], end='')
+for b in range(len(array_3)):
+    print(array_3[b][0], end='')
